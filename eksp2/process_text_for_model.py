@@ -4,6 +4,7 @@ import os
 from os import listdir
 
 t = []
+#файл news_data доступен по ссылке с текстами в readme
 with open("C:/ФИКЛ/Курсовая Извлечение Коннекторов/news_data.txt", "r", encoding="utf_8_sig") as f:
     for line in f:
         cleaned_snt = re.sub(r'[^\w\s\.]','', line)
